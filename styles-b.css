@@ -251,6 +251,7 @@ section h2 em,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 8%;
   filter: grayscale(42%) saturate(75%);
 }
 
@@ -526,6 +527,13 @@ section h2 em,
   stroke-width: 1.5;
 }
 
+.card__icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
 .card h3 {
   font-size: 17px;
   font-family: "Inter", sans-serif;
@@ -537,6 +545,11 @@ section h2 em,
 
 .card p {
   color: #4a4a4a;
+}
+
+.card__title--single-line {
+  max-width: none;
+  white-space: nowrap;
 }
 
 .js-reveal [data-reveal] {
@@ -860,6 +873,13 @@ blockquote cite {
   stroke-width: 1.5;
 }
 
+.btn__icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
 .btn--primary {
   background: var(--gold);
   border: 1px solid rgba(0, 0, 0, 0.04);
@@ -913,6 +933,20 @@ blockquote cite {
   justify-content: space-between;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+.footer__credit {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.82rem;
+}
+
+.footer__credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__credit a:hover {
+  color: rgba(255, 255, 255, 0.68);
 }
 
 @media (max-width: 1100px) {
