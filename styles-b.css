@@ -281,15 +281,23 @@ section h2 em,
 }
 
 .hero__card h2 {
-  font-size: 1.55rem;
-  margin: 0 0 18px;
-  max-width: 20ch;
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  margin: 0 0 12px;
+  max-width: 18ch;
+}
+
+.hero__card-lead {
+  max-width: 54ch;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.62;
 }
 
 .hero__card ul {
   padding-left: 18px;
   display: grid;
-  gap: 10px;
+  gap: 8px 28px;
   color: rgba(255, 255, 255, 0.88);
 }
 
@@ -807,6 +815,11 @@ blockquote cite {
   font-size: 1.22rem;
   color: var(--petroleum);
   background: #ffffff;
+}
+
+.closing em {
+  color: var(--gold);
+  font-style: italic;
 }
 
 .cta {
