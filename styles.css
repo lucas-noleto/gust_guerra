@@ -340,7 +340,7 @@ section h2 em,
 .hero__card h2 {
   font-size: clamp(2rem, 3vw, 2.65rem);
   margin: 0 0 12px;
-  max-width: 18ch;
+  max-width: 50ch;
   line-height: 1.15;
 }
 
